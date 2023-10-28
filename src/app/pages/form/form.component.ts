@@ -33,6 +33,12 @@ export class FormComponent{
       alert('Complete data');
     } else {
       if(this.personForm.value != null) {
+        if (this.personForm.value.email == '') return;
+        if (this.personForm.value.firstName == '') return;
+        if (this.personForm.value.lastName == '') return;
+        if (this.personForm.value.phoneNumber == '') return;
+        if (this.personForm.value.salary == '') return; 
+
         this.modalRef = this.modalService.show(PersonModalComponent, {
           initialState: {
             person: new Person(
