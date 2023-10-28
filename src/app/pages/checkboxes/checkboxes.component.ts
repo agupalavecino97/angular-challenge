@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, signal } from '@angular/core';
 
 @Component({
   selector: 'app-checkboxes',
@@ -6,5 +6,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./checkboxes.component.scss']
 })
 export class CheckboxesComponent {
+  option = signal(0);
 
+
+  onOptionChange(opt: number) {
+    this.option.update(val => val = opt);
+  }
 }

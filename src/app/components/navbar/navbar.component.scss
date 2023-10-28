@@ -1,0 +1,12 @@
+.navbar-item {
+    color: aliceblue;
+}
+
+.navbar-item-active {
+    background-color: #ff5722;
+    width: 1.5em;
+    height: 1.5em;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+}

@@ -31,7 +31,6 @@ export class FormComponent{
   onSubmit() {
     if (!this.personForm.valid) {
       alert('Complete data');
-      return false;
     } else {
       if(this.personForm.value != null) {
         this.modalRef = this.modalService.show(PersonModalComponent, {
@@ -45,11 +44,7 @@ export class FormComponent{
               this.personForm.value.salary ? this.personForm.value.salary : '')
           }
         });
-      }
-
-     
-      return console.log(this.personForm.value);
-      
+      }      
     }
   }
 }

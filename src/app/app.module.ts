@@ -14,6 +14,10 @@ import { PersonModalComponent } from './components/person-modal/person-modal.com
 
 import { IgxGridModule, IgxButtonGroupModule } from "igniteui-angular";
 import { IgxPreventDocumentScrollModule } from "./directives/prevent-scroll.directive";
+import { Form1Component } from './components/form1/form1.component';
+import { Form2Component } from './components/form2/form2.component';
+import { Form3Component } from './components/form3/form3.component';
+import { NavbarComponent } from './components/navbar/navbar.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +25,11 @@ import { IgxPreventDocumentScrollModule } from "./directives/prevent-scroll.dire
     FormComponent,
     TableComponent,
     CheckboxesComponent,
-    PersonModalComponent
+    PersonModalComponent,
+    Form1Component,
+    Form2Component,
+    Form3Component,
+    NavbarComponent
   ],
   imports: [
     BrowserModule,

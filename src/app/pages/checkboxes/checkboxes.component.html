@@ -1,1 +1,33 @@
-<p>checkboxes works!</p>
+<div class="container">
+    <div class="layout">
+        <div class="checkboxes">
+            <h5>Select an option</h5>
+            <div class="form-check mt-2">
+                <input class="form-check-input" type="radio" name="opt1" id="opt1" (change)="onOptionChange(1)" [checked]="option() == 1">
+                <label class="form-check-label" for="opt1">
+                  Form 1
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="opt2" id="opt2" (change)="onOptionChange(2)" [checked]="option() == 2">
+                <label class="form-check-label" for="opt2">
+                  Form 2
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="opt3" id="opt3" (change)="onOptionChange(3)" [checked]="option() == 3">
+                <label class="form-check-label" for="opt3">
+                  Form 3
+                </label>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12 col-lg-6 offset-lg-3">
+                <app-form1 *ngIf="option() == 1"></app-form1>
+                <app-form2 *ngIf="option() == 2"></app-form2>
+                <app-form3 *ngIf="option() == 3"></app-form3>
+            </div>
+        </div>    
+    </div>
+   
+</div>
