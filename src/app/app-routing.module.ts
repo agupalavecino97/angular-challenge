@@ -8,8 +8,8 @@ const routes: Routes = [
   { path: 'form', component: FormComponent },
   { path: 'table', component: TableComponent },
   { path: 'checkboxes', component: CheckboxesComponent },
- 
-  { path: '**', component: FormComponent }
+  { path: '', redirectTo: 'form', pathMatch: 'full' },
+  { path: '**', redirectTo: 'form', pathMatch: 'full'}
 ];
 
 @NgModule({

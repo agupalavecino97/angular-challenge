@@ -7,13 +7,11 @@ import { Router } from '@angular/router';
   styleUrls: ['./navbar.component.scss']
 })
 export class NavbarComponent {
-  url = signal('');
+    url = signal('');
 
     constructor(private _router: Router) {
       this._router.events.subscribe((routerEvent: any) => {
-        console.log(_router.url);
         this.url.update(val => val = _router.url);
-  
       });
     }
 }

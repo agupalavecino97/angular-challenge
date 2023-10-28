@@ -13,3 +13,23 @@
 // CSS Reset, comment out if not required or using a different module
 @import 'minireset.css/minireset';
 /* You can add global styles to this file, and also import other style files */
+
+
+.btn-custom {
+    background-color: #ff5722;
+    color: #eee;
+    border-color: #ff5722;
+    float: right;
+}
+
+.btn-custom:hover {
+    background-color: #dd2c00;
+    border-color: #dd2c00;
+    color: #eee;
+}
+
+body{
+    background-color: #f2f2f2!important;  
+    background-color: #eceff1!important;
+    font-family: 'Open Sans', sans-serif!important;
+}
